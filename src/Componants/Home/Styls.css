@@ -1,0 +1,27 @@
+.Home{
+    background-image: url("../../../public/images/Home/home-bg.jpg");
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+
+}
+.Home .Text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ 
+}
+.Home .Text h3{
+    color: #eb5424;
+}
+.Home .Text button{
+transition: 0.3s;
+}
+.Home .Text button:hover{
+    background-color: white;
+    color: #eb5424;
+}

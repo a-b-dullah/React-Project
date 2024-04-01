@@ -1,0 +1,21 @@
+form{
+    width: 70%;
+    margin: 20px auto;
+}
+.inputs  input{
+    width: 50%;
+}
+textarea{
+    height: 160px;
+    background: #ccc;
+}
+textarea:focus{
+    outline: none;
+}
+form button{
+    transition: 0.3s;
+}
+form button:hover{
+    background-color: #eb5424;
+    color: white;
+}

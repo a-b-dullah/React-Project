@@ -1,0 +1,21 @@
+.boxes{
+    padding: 100px ;
+}
+.boxes:first-child{
+background-color: #3b5998;
+}
+.boxes:nth-child(2){
+background-color: #498cbf;
+}
+.boxes:last-child{
+background-color: #cc2127;
+}
+.boxes i{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}

@@ -1,0 +1,28 @@
+.Creative{
+padding: 10px;
+background-image: url(../../../public/images/creative/about-bg.jpg);
+height: 500px;
+background-size: cover;
+background-attachment: fixed;
+}
+.Creative .text{
+    padding: 10px;  
+    width: 500px;
+    margin-left: auto;
+}
+.Creative .text p{
+    line-height: 1.7;
+}
+.h4{
+    color: #eb5424;
+}
+@media (max-width:592px) {
+    .Creative .text{
+        width: 100%;
+       
+    }
+   
+
+}
+    
+

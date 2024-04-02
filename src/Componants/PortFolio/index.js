@@ -4,20 +4,16 @@ import { useEffect, useState } from "react";
 export default function PortFolio(){
 function Toggle(img){
 // Create Element
-// let div=document.createElement("div");
-// let box=document.createElement("div");
-// let img2 =document.createElement("img")
-//  // Get ClassName for Element
-//  div.classList.add("Father")
-//  box.classList.add('box1')
-//  div.style.backgroundColor="#999"
-
-
-
-
-
-//  document.body.appendChild(div)
+let Portfolio=document.querySelector(".Portfolio")
+let div=document.createElement("div");
+let box=document.createElement("div");
+let img2 =document.createElement("img")
 //  ********************
+ // Get ClassName for Element
+ div.classList.add("Box2");
+ Portfolio.appendChild(div)
+//  document.body.style.backgroundColor:"#eee"
+
 
 
 
@@ -58,7 +54,7 @@ return(
 </div>
 </div>
 </nav>
-<div className="mt-3">
+<div className="mt-3 Imgs">
 {data.map((imgs)=>{
     return(
 <div className="box  " key={imgs.id}> 

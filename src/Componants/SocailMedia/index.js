@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import "./Styls.css"
+import axios from "axios"
 
 export default  function SocailMedia(){
 const [state,setstate]=useState([])
-useEffect(()=>{
-fetch(`http://localhost:8000/social`)
-.then(res=>res.json())
-.then(data=>setstate(data))
-},[])
+axios.get("Js/db.json")
+.then(res=>setstate(res.data.social))
+
+
 return(
 <div>
 <div className="row w-100">

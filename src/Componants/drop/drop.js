@@ -11,7 +11,7 @@ return(
 </div>
 <input className="w-100 mt-3" type="text" placeholder="Your Object"></input>
 <textarea className="w-100 mt-3 bg-black-50" placeholder="Your Message"></textarea>
-<button type="submit" className="p-3 border">Send Message</button>            
+<button type="submit" className="p-3 border mt-2">Send Message</button>            
 </form>
 </div>
 </div>

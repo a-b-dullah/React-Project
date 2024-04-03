@@ -1,30 +1,14 @@
 import { Link } from "react-router-dom";
 import "./Styls.css"
-import { useEffect, useState } from "react";
+import {  useState } from "react";
+import axios from "axios";
 export default function PortFolio(){
 function Toggle(img){
-// Create Element
-let Portfolio=document.querySelector(".Portfolio")
-let div=document.createElement("div");
-let box=document.createElement("div");
-let img2 =document.createElement("img")
-//  ********************
- // Get ClassName for Element
- div.classList.add("Box2");
- Portfolio.appendChild(div)
-//  document.body.style.backgroundColor:"#eee"
-
-
-
-
-
 }
 const [data,setdata]=useState([])
-    useEffect(()=>{
-        fetch(`http://localhost:8000/portfolio`)
-        .then(res=>res.json())
-        .then(data=>setdata(data))
-    })
+axios.get("Js/db.json")
+.then(res=>setdata(res.data.portfolio)
+,[])
 return(
 <div className="Portfolio p-3  " style={{backgroundColor:"#eee"}}>
     <h2 className="fs-2 fw-bold text-center">My Portfolio</h2>

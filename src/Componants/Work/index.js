@@ -1,15 +1,13 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import "./style.css"
+import axios from "axios";
 
 export default  function Work(){
 const [state,setstate]=useState([]);
-useEffect(()=>{
-fetch(`http://localhost:8000/works`)
-.then(res=>res.json())
-.then(data=>setstate(data));
-
-
-})
+axios.get("Js/db.json")
+.then(res=>setstate(res.data.works)
+,[]
+)
 return(
 <div className="Work mt-4 p-4">
     <h2 className="fs-1 text-center">My Work</h2>
